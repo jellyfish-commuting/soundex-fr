@@ -1,6 +1,6 @@
 # soundex-fr
 Soundex function adapted for french phonetics   
-See https://fr.wikipedia.org/wiki/Soundex#Description  
+For mapping used see https://fr.wikipedia.org/wiki/Soundex#Description  
 
 
 ### Install
