@@ -2,9 +2,9 @@ const soundex = require('./index');
 
 // Start tests ...
 describe('Soundex FR', () => {
-  it('expect equal for KABYLE & KAPILE', () => expect(soundex('KABYLE')).toBe(soundex('KAPILE')));
-  it('expect equal for AMIE & ANIE', () => expect(soundex('AMIE')).toBe(soundex('ANIE')));
-  it('expect equal for PÉNIBLE & PEMIPLE', () => expect(soundex('PENIBLE')).toBe(soundex('PEMIPLE')));
-  it('expect equal for ACCROCHAGE & AKROCHAJE', () => expect(soundex('ACCROCHAGE')).toBe(soundex('AKROCHAJE')));
-  it('expect different for DEUX & TROIS', () => expect(soundex('DEUX')).not.toBe(soundex('TROIS')));
+  it('expect equal for Kabyle & Kapile', () => expect(soundex('Kabyle')).toBe(soundex('Kapile')));
+  it('expect equal for Amie & Anie', () => expect(soundex('Amie')).toBe(soundex('Anie')));
+  it('expect equal for Pénible & Pemiple', () => expect(soundex('Pénible')).toBe(soundex('Pemiple')));
+  it('expect equal for Accrochage & Akrochaje', () => expect(soundex('Accrochage')).toBe(soundex('Akrochaje')));
+  it('expect different for deux & trois', () => expect(soundex('deux')).not.toBe(soundex('trois')));
 });
