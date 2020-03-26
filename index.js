@@ -12,24 +12,15 @@ module.exports = function (str) {
 
   // Letter mapping for french phonetics
   const codes = {
-    B: 1,
-    P: 1,
-    C: 2,
-    K: 2,
-    Q: 2,
-    D: 3,
-    T: 3,
+    B: 1, P: 1,
+    C: 2, K: 2, Q: 2,
+    D: 3, T: 3,
     L: 4,
-    M: 5,
-    N: 5,
+    M: 5, N: 5,
     R: 6,
-    G: 7,
-    J: 7,
-    W: 8,
-    Z: 8,
-    S: 8,
-    F: 9,
-    V: 9,
+    G: 7, J: 7,
+    X: 8, Z: 8, S: 8,
+    F: 9, V: 9,
   };
 
   // Init loop
