@@ -15,5 +15,11 @@ npm install @thejellyfish/soundex-fr
 ```javascript
     import soundex from '@thejellyfish/soundex-fr';
 
-    const hash = soundex('SOME FRENCH WORD');
+    if (!soundex('PÉNIBLE').localeCompare(soundex('PEMIPLE'))) {
+      console.log('Equal soundex');
+    } else {
+      console.log('Different soundex');
+    }
+    
+    // Output : Equal soundex
 ```
