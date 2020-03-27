@@ -3,7 +3,7 @@
 //-------
 module.exports = function (str) {
   // Keep letters only
-  const buffer = String(str).toUpperCase().replace(/[^A-Z]/g, '');
+  const buffer = String(str).normalize('NFD').toUpperCase().replace(/[\u0300-\u036f]|[^A-Z]/g, '');
 
   // Empty string ?
   if (buffer.length === 0) {
