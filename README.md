@@ -15,7 +15,7 @@ npm install @thejellyfish/soundex-fr
 ```javascript
     import soundex from '@thejellyfish/soundex-fr';
 
-    if (!soundex('Pénible').localeCompare(soundex('Pemiple'))) {
+    if (!soundex('Robert').localeCompare(soundex('Rupert'))) {
       console.log('Equal soundex');
     } else {
       console.log('Different soundex');
