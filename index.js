@@ -6,7 +6,7 @@ module.exports = function (str) {
   const buffer = String(str).normalize('NFD').toUpperCase().replace(/[\u0300-\u036f]|[^A-Z]/g, '');
 
   // Empty string ?
-  if (buffer.length === 0) {
+  if (!buffer.length) {
     return '0000';
   }
 
@@ -39,6 +39,6 @@ module.exports = function (str) {
     )
     // Fill with 0
     .padEnd(4, '0')
-    // Return the five first chars
+    // Return the four first chars
     .slice(0, 4);
 };
