@@ -7,36 +7,36 @@ module.exports = function (str) {
 
   // Empty string ?
   if (buffer.length === 0) {
-    return null;
+    return '0000';
   }
 
   // Letter mapping for french phonetics
   const codes = {
-    B: 1, P: 1,
-    C: 2, K: 2, Q: 2,
-    D: 3, T: 3,
-    L: 4,
-    M: 5, N: 5,
-    R: 6,
-    G: 7, J: 7,
-    X: 8, Z: 8, S: 8,
-    F: 9, V: 9,
+    B: '1', P: '1',
+    C: '2', K: '2', Q: '2',
+    D: '3', T: '3',
+    L: '4',
+    M: '5', N: '5',
+    R: '6',
+    G: '7', J: '7',
+    X: '8', Z: '8', S: '8',
+    F: '9', V: '9',
   };
 
-  // Init loop
-  const first = buffer.charAt(0);
-  let result = '';
-  let prev = null;
+  return [...buffer.slice(1)]
+    // Map all chars in buffer
+    .reduce(
+      (acc, letter, i) => {
+        // Different than previous letter ?
+        if (codes[letter] && codes[letter] !== codes[buffer[i]]) {
+          return acc + codes[letter];
+        }
 
-  for (let i = 1; i < buffer.length; i += 1) {
-    const code = codes[buffer[i]] || null;
-
-    if (code !== null && (i !== 1 || code !== codes[first]) && code !== prev) {
-      result += code;
-    }
-
-    prev = code;
-  }
-
-  return `${first}${result}000`.slice(0, 4);
+        return acc;
+      },
+      // Init accumulator with first letter
+      buffer[0],
+    )
+    // Fill with 0
+    .padEnd(4, '0');
 };
