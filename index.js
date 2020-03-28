@@ -38,5 +38,7 @@ module.exports = function (str) {
       buffer[0],
     )
     // Fill with 0
-    .padEnd(4, '0');
+    .padEnd(4, '0')
+    // Return the five first chars
+    .slice(0, 4);
 };
