@@ -13,13 +13,17 @@ npm install @thejellyfish/soundex-fr
 ```
 ### Usage
 ```javascript
-    import soundex from '@thejellyfish/soundex-fr';
+import soundex from '@thejellyfish/soundex-fr';
 
-    if (!soundex('Robert').localeCompare(soundex('Rupert'))) {
-      console.log('Equal soundex');
-    } else {
-      console.log('Different soundex');
-    }
+if (!soundex('Robert').localeCompare(soundex('Rupert'))) {
+  console.log('Equal soundex');
+} else {
+  console.log('Different soundex');
+}
     
-    // Output : Equal soundex
+// Output : Equal soundex
 ```
+
+### Return value
+
+Soundex result (4 chars)
