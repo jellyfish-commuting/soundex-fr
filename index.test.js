@@ -7,5 +7,5 @@ describe('Soundex FR', () => {
   it('expect equal for Éric & Erick', () => expect(soundex('Éric')).toBe(soundex('Erick')));
   it('expect equal for Robert & Rupert', () => expect(soundex('Robert')).toBe(soundex('Rupert')));
   it('expect equal for Annie & Amnie', () => expect(soundex('Annie')).toBe(soundex('Amnie')));
-  it('expect different for deux & trois', () => expect(soundex('deux')).not.toBe(soundex('trois')));
+  it('expect different for Kabyle & Arab', () => expect(soundex('Kabyle')).not.toBe(soundex('Arab')));
 });
