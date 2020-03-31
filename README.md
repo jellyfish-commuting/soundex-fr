@@ -26,4 +26,4 @@ if (!soundex('Robert').localeCompare(soundex('Rupert'))) {
 
 ### Return value
 
-Soundex result (4 chars)
+Soundex key (4 chars)
