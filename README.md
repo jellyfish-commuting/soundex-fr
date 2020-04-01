@@ -1,6 +1,7 @@
 # soundex-fr
 Soundex function adapted for french phonetics   
-Compliant, optimized and small package to get the soundex key    
+Compliant, optimized and small package to get the soundex key       
+
 For mapping used see https://fr.wikipedia.org/wiki/Soundex#Description  
 
 
