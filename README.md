@@ -7,15 +7,15 @@ For mapping used see https://fr.wikipedia.org/wiki/Soundex#Description
 
 ### Install
 ```bash
-yarn add @thejellyfish/soundex-fr
+yarn add @jellyfish/soundex-fr
 ```
 or
 ```bash
-npm install @thejellyfish/soundex-fr
+npm install @jellyfish/soundex-fr
 ```
 ### Usage
 ```javascript
-import soundex from '@thejellyfish/soundex-fr';
+import soundex from '@jellyfish/soundex-fr';
 
 if (!soundex('Robert').localeCompare(soundex('Rupert'))) {
   console.log('Equal soundex');
