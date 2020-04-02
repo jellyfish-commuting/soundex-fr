@@ -1,5 +1,5 @@
 // Letter mapping for french phonetics, see https://fr.wikipedia.org/wiki/Soundex#Description
-const codes = {
+const codes = new Map(Object.entries({
   B: 1, P: 1,
   C: 2, Ç: 2, K: 2, Q: 2,
   D: 3, T: 3,
@@ -13,7 +13,7 @@ const codes = {
   E: 0, É: 0, È: 0, Ê: 0, Ë: 0,
   I: 0, Î: 0, Ï: 0, O: 0,
   Ô: 0, Ö: 0, U: 0, Û: 0, Ü: 0, Ù: 0,
-};
+}));
 
 //-------
 // Soundex
@@ -24,13 +24,13 @@ module.exports = function (str, length = 4) {
 
   // Init result
   let result = buffer.charAt(0).normalize('NFD').replace(/[\u0300-\u036f]/g, '');
-  let previous = codes[result];
+  let previous = codes.get(result);
 
   // Map all chars
   for(let i = 1; i < buffer.length; i += 1) {
     // Retrieve current values
     const letter = buffer.charAt(i);
-    const code = codes[letter];
+    const code = codes.get(letter);
 
     // Ignore letter
     if (code === undefined) {
