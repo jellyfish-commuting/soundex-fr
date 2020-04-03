@@ -11,18 +11,19 @@ const codes = new Map(Object.entries({
   F: 9, V: 9,
   A: 0, À: 0, Â: 0, Ä: 0,
   E: 0, É: 0, È: 0, Ê: 0, Ë: 0,
-  I: 0, Î: 0, Ï: 0, O: 0,
-  Ô: 0, Ö: 0, U: 0, Û: 0, Ü: 0, Ù: 0,
+  I: 0, Î: 0, Ï: 0,
+  O: 0, Ô: 0, Ö: 0,
+  U: 0, Û: 0, Ü: 0, Ù: 0,
 }));
 
 //-------
 // Soundex
 //-------
 module.exports = function (str, length = 4) {
-  // Capitalize and remove accents
+  // Capitalize
   const buffer = String(str).toUpperCase();
 
-  // Init result
+  // Init result by removing accent for the 1st letter
   let result = buffer.charAt(0).normalize('NFD').replace(/[\u0300-\u036f]/g, '');
   let previous = codes.get(result);
 
