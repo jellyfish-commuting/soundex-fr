@@ -1,6 +1,6 @@
 {
   "name": "@thejellyfish/soundex-fr",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Soundex function adapted for french phonetics",
   "keywords": ["soundex", "french", "fr"],
   "license": "ISC",
