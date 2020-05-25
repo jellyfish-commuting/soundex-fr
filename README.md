@@ -1,3 +1,9 @@
+![Version](https://img.shields.io/npm/v/@thejellyfish/soundex-fr)
+![Licence](https://img.shields.io/npm/l/@thejellyfish/soundex-fr)
+![Build](https://img.shields.io/travis/thejellyfish/soundex-fr)
+![Coverage](https://img.shields.io/codecov/c/github/thejellyfish/soundex-fr)
+![Downloads](https://img.shields.io/npm/dt/@thejellyfish/soundex-fr)
+
 # soundex-fr
 Soundex function adapted for french phonetics   
 Compliant, optimized and small package to get the soundex key       
