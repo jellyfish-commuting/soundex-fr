@@ -1,16 +1,17 @@
 {
   "name": "@thejellyfish/soundex-fr",
-  "version": "1.0.2",
   "description": "Soundex function adapted for french phonetics",
   "keywords": ["soundex", "french", "fr"],
   "license": "ISC",
   "author": "thejellyfish <the@jellyfish-commuting.com>",
   "main": "index.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "coverage": "codecov"
   },
   "dependencies": {},
   "devDependencies": {
+    "codecov": "^3.7.0",
     "jest": "^25.2.0"
   },
   "repository": {
@@ -20,5 +21,18 @@
   "bugs": {
     "url": "https://github.com/thejellyfish/soundex-fr/issues"
   },
-  "homepage": "https://github.com/thejellyfish/soundex-fr#readme"
+  "homepage": "https://github.com/thejellyfish/soundex-fr#readme",
+  "publishConfig": {
+    "access": "public"
+  },
+  "jest": {
+    "collectCoverage": true,
+    "collectCoverageFrom": [
+      "index.js"
+    ],
+    "coverageReporters": [
+      "lcov",
+      "text-summary"
+    ]
+  }
 }
