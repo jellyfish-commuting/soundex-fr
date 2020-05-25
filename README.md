@@ -23,6 +23,7 @@ npm install @thejellyfish/soundex-fr
 ```javascript
 import soundex from '@thejellyfish/soundex-fr';
 
+// Test equal phonetics
 if (soundex('Robert') === soundex('Rupert')) {
   console.log('Equal soundex');
 } else {
