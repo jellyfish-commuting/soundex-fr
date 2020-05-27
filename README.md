@@ -6,7 +6,7 @@
 
 # soundex-fr
 Soundex function adapted for french phonetics   
-Compliant, optimized and small package to get the soundex key       
+Compliant, optimized and small package to get soundex key       
 
 For mapping used see https://fr.wikipedia.org/wiki/Soundex#Description  
 
@@ -40,10 +40,10 @@ if (soundex('Robert') === soundex('Rupert')) {
 soundex(str, length);
 ```
 
-| Prop     | Type     |  Default         | Note                      |
-|----------|----------|------------------|---------------------------|
-| `str`    | `string` | _Required field_ | Input value               |
-| `length` | `int`    | `4`              | Length of the soundex key |
+| Prop     | Type     |  Default         | Note                  |
+|----------|----------|------------------|-----------------------|
+| `str`    | `string` | _Required field_ | Input value           |
+| `length` | `int`    | `4`              | Length of soundex key |
 
 
 ### Return value
