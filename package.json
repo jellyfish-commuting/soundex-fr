@@ -2,7 +2,7 @@
   "name": "@thejellyfish/soundex-fr",
   "description": "Soundex function adapted for french phonetics",
   "keywords": ["soundex", "french", "fr"],
-  "license": "ISC",
+  "license": "MIT",
   "author": "thejellyfish <the@jellyfish-commuting.com>",
   "main": "index.js",
   "scripts": {
