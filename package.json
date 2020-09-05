@@ -1,5 +1,5 @@
 {
-  "name": "@thejellyfish/soundex-fr",
+  "name": "@jellyfish-commuting/soundex-fr",
   "description": "Soundex function adapted for french phonetics",
   "keywords": ["soundex", "french", "fr"],
   "license": "MIT",
@@ -16,12 +16,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/thejellyfish/soundex-fr.git"
+    "url": "git://github.com/jellyfish-commuting/soundex-fr.git"
   },
   "bugs": {
-    "url": "https://github.com/thejellyfish/soundex-fr/issues"
+    "url": "https://github.com/jellyfish-commuting/soundex-fr/issues"
   },
-  "homepage": "https://github.com/thejellyfish/soundex-fr#readme",
+  "homepage": "https://github.com/jellyfish-commuting/soundex-fr#readme",
   "publishConfig": {
     "access": "public"
   },
