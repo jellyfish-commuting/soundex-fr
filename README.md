@@ -5,9 +5,9 @@
 [![Downloads](https://img.shields.io/npm/dt/@jellyfish-commuting/soundex-fr)](https://www.npmjs.com/package/@jellyfish-commuting/soundex-fr)
 
 # soundex-fr
-Soundex function adapted for french phonetics
-Compliant, optimized and small package to get soundex key
-
+Soundex function adapted for french phonetics    
+Compliant, optimized and small package to get soundex key    
+     
 For mapping used see https://fr.wikipedia.org/wiki/Soundex#Description
 
 
