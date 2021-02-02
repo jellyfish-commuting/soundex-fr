@@ -1,8 +1,8 @@
-[![Version](https://img.shields.io/npm/v/@jellyfish-commuting/soundex-fr)](https://www.npmjs.com/package/@jellyfish-commuting/soundex-fr)
-[![Licence](https://img.shields.io/npm/l/@jellyfish-commuting/soundex-fr)](https://en.wikipedia.org/wiki/MIT_license)
-[![Build](https://img.shields.io/travis/jellyfish-commuting/soundex-fr)](https://travis-ci.org/github/jellyfish-commuting/soundex-fr)
-[![Coverage](https://img.shields.io/codecov/c/github/jellyfish-commuting/soundex-fr)](https://codecov.io/gh/jellyfish-commuting/soundex-fr)
-[![Downloads](https://img.shields.io/npm/dt/@jellyfish-commuting/soundex-fr)](https://www.npmjs.com/package/@jellyfish-commuting/soundex-fr)
+[![Version](https://img.shields.io/npm/v/@jollie/soundex-fr)](https://www.npmjs.com/package/@jollie/soundex-fr)
+[![Licence](https://img.shields.io/npm/l/@jollie/soundex-fr)](https://en.wikipedia.org/wiki/MIT_license)
+[![Build](https://img.shields.io/travis/thejellyfish/soundex-fr)](https://travis-ci.org/github/thejellyfish/soundex-fr)
+[![Coverage](https://img.shields.io/codecov/c/github/thejellyfish/soundex-fr)](https://codecov.io/gh/thejellyfish/soundex-fr)
+[![Downloads](https://img.shields.io/npm/dt/@jollie/soundex-fr)](https://www.npmjs.com/package/@jollie/soundex-fr)
 
 # soundex-fr
 Soundex function adapted for french phonetics    
@@ -13,15 +13,15 @@ For mapping used see https://fr.wikipedia.org/wiki/Soundex#Description
 
 ### Install
 ```bash
-yarn add @jellyfish-commuting/soundex-fr
+yarn add @jollie/soundex-fr
 ```
 or
 ```bash
-npm install @jellyfish-commuting/soundex-fr
+npm install @jollie/soundex-fr
 ```
 ### Usage
 ```javascript
-import soundex from '@jellyfish-commuting/soundex-fr';
+import soundex from '@jollie/soundex-fr';
 
 // Test equal phonetics
 if (soundex('Robert') === soundex('Rupert')) {
